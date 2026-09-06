@@ -9,7 +9,8 @@ namespace MCPulse.Tests;
 /// </summary>
 /// <remarks>
 /// <para>
-/// <c>canonical.json</c> is the shared conformance suite, copied from mcpulse-sdk-spec. The
+/// <c>canonical.json</c> is the shared conformance suite, copied from
+/// <c>packages/schemas/fixtures</c> in the mcpulse monorepo. The
 /// TypeScript, Python, Go and Java SDKs run the same file. If it passes in all of them, their
 /// hashes are interchangeable and a customer running more than one sees one set of numbers rather
 /// than several.
