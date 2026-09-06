@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>MCPulse</PackageId>
+    <Authors>MCPulse</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>0.1.0</Version>
+    <Description>Analytics for MCP servers. One import, one wrap.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>mcp;model-context-protocol;analytics;observability;llm</PackageTags>
+    <RepositoryUrl>https://github.com/getmcpulse/mcpulse-dotnet</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The conformance suite exercises the internals it is there to pin. -->
+    <InternalsVisibleTo Include="MCPulse.Tests" />
+
+    <!-- nuget.org renders this on the package page. -->
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <!--
+    No package references at all, deliberately. This library is loaded into other people's
+    servers, and a transitive dependency that conflicts with what the customer already pins is a
+    support burden with no upside. Everything needed — the canonicaliser, the HTTP call, the
+    buffering — is in the base class library.
+  -->
+
+</Project>
