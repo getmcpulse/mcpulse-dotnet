@@ -14,8 +14,10 @@
     <Version>0.1.0</Version>
     <Description>Analytics for MCP servers. One import, one wrap.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>mcp;model-context-protocol;analytics;observability;llm</PackageTags>
+    <PackageTags>mcp;model-context-protocol;mcp-server;mcp-analytics;analytics;observability;monitoring;telemetry;llm-tools</PackageTags>
+    <PackageProjectUrl>https://getmcpulse.com</PackageProjectUrl>
     <RepositoryUrl>https://github.com/getmcpulse/mcpulse-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

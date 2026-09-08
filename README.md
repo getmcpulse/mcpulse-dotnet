@@ -2,6 +2,8 @@
 
 Analytics for MCP servers, for the [official C# MCP SDK](https://github.com/modelcontextprotocol/csharp-sdk).
 
+**[getmcpulse.com](https://getmcpulse.com)** · [Docs](https://docs.getmcpulse.com) · [Dashboard](https://app.getmcpulse.com)
+
 ```csharp
 using MCPulse;
 
